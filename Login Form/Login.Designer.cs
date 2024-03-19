@@ -34,6 +34,7 @@
             textBox_userEmail = new TextBox();
             textBox_password = new TextBox();
             btn_submit = new Button();
+            btn_clear = new Button();
             SuspendLayout();
             // 
             // label1
@@ -65,10 +66,10 @@
             label_password.TabIndex = 2;
             label_password.Text = "Password";
             // 
-            // textBox_username
+            // textBox_userEmail
             // 
             textBox_userEmail.Location = new Point(172, 134);
-            textBox_userEmail.Name = "textBox_username";
+            textBox_userEmail.Name = "textBox_userEmail";
             textBox_userEmail.Size = new Size(194, 23);
             textBox_userEmail.TabIndex = 3;
             // 
@@ -81,7 +82,7 @@
             // 
             // btn_submit
             // 
-            btn_submit.Location = new Point(172, 287);
+            btn_submit.Location = new Point(71, 287);
             btn_submit.Name = "btn_submit";
             btn_submit.Size = new Size(114, 35);
             btn_submit.TabIndex = 5;
@@ -89,18 +90,29 @@
             btn_submit.UseVisualStyleBackColor = true;
             btn_submit.Click += btn_submit_Click;
             // 
-            // Form1
+            // btn_clear
+            // 
+            btn_clear.Location = new Point(229, 287);
+            btn_clear.Name = "btn_clear";
+            btn_clear.Size = new Size(114, 35);
+            btn_clear.TabIndex = 6;
+            btn_clear.Text = "Clear";
+            btn_clear.UseVisualStyleBackColor = true;
+            btn_clear.Click += btn_clear_Click;
+            // 
+            // Login
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(462, 450);
+            Controls.Add(btn_clear);
             Controls.Add(btn_submit);
             Controls.Add(textBox_password);
             Controls.Add(textBox_userEmail);
             Controls.Add(label_password);
             Controls.Add(label_username);
             Controls.Add(label1);
-            Name = "Form1";
+            Name = "Login";
             Text = "Login";
             ResumeLayout(false);
             PerformLayout();
@@ -114,5 +126,6 @@
         private TextBox textBox_userEmail;
         private TextBox textBox_password;
         private Button btn_submit;
+        private Button btn_clear;
     }
 }

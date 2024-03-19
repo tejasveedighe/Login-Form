@@ -39,9 +39,17 @@ namespace Login_Form
                 MessageBox.Show("Login Failed!", "Error", MessageBoxButtons.OK, MessageBoxIcon.Error);
                 textBox_password.Clear();
                 textBox_userEmail.Clear();
+                textBox_userEmail.Focus();
             }
 
 
+        }
+
+        private void btn_clear_Click(object sender, EventArgs e)
+        {
+            textBox_password.Clear();
+            textBox_userEmail.Clear();
+            textBox_userEmail.Focus();
         }
     }
 }
