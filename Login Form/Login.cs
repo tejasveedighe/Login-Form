@@ -14,6 +14,7 @@ namespace Login_Form
         {
             string username = textBox_userEmail.Text;
             string password = textBox_password.Text;
+            string Output = "";
 
             SqlCommand command = new SqlCommand("SELECT * FROM LpUser where Email=@UserEmail and Password = @Password", conn);
 
@@ -30,7 +31,9 @@ namespace Login_Form
 
             if (dt.Rows.Count > 0)
             {
-                MessageBox.Show("Login Successful!");
+                MessageBox.Show("Login Successful!", "Information", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                ShowDetails showDetails = new ShowDetails();
+                showDetails.Show();
                 textBox_password.Clear();
                 textBox_userEmail.Clear();
             }
