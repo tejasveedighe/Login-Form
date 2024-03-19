@@ -41,9 +41,9 @@
             // 
             label1.Anchor = AnchorStyles.Top | AnchorStyles.Left | AnchorStyles.Right;
             label1.Font = new Font("Microsoft Sans Serif", 20.25F, FontStyle.Bold, GraphicsUnit.Point);
-            label1.Location = new Point(172, 19);
+            label1.Location = new Point(71, 20);
             label1.Name = "label1";
-            label1.Size = new Size(133, 31);
+            label1.Size = new Size(272, 31);
             label1.TabIndex = 0;
             label1.Text = "Welcome";
             label1.TextAlign = ContentAlignment.TopCenter;
@@ -104,7 +104,7 @@
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(462, 450);
+            ClientSize = new Size(402, 389);
             Controls.Add(btn_clear);
             Controls.Add(btn_submit);
             Controls.Add(textBox_password);

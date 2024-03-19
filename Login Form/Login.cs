@@ -44,8 +44,6 @@ namespace Login_Form
                 textBox_userEmail.Clear();
                 textBox_userEmail.Focus();
             }
-
-
         }
 
         private void btn_clear_Click(object sender, EventArgs e)
